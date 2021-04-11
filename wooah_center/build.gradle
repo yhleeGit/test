@@ -1,0 +1,12 @@
+
+dependencies {
+	compile project(':wooah_common')
+	compile project(':wooah_util')
+	
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	//implementation 'org.springframework.boot:spring-boot-starter-security'
+	
+	
+}

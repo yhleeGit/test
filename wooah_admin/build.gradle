@@ -1,0 +1,23 @@
+dependencies {
+
+	compile project(':wooah_common')
+	compile project(':wooah_util')
+	
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+	compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '3.2.0.RELEASE'
+	
+	//#tiles 설정
+	compile 'org.apache.tiles:tiles-core:3.0.8'
+	compile 'org.apache.tiles:tiles-servlet:3.0.8'
+	compile 'org.apache.tiles:tiles-jsp:3.0.8'
+	compile 'org.apache.tiles:tiles-request-servlet:1.0.7'
+	compile 'org.apache.tiles:tiles-request-jsp:1.0.7'
+	compile 'org.apache.tiles:tiles-request-api:1.0.7'
+	//#jsp 사용 설정
+	compile 'jstl:jstl:1.2'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+}
+
